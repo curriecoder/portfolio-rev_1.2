@@ -1,0 +1,259 @@
+* {
+  color: rgb(216, 216, 216);
+ }
+
+ body {
+  background-color: #108194;
+ }
+
+.name {
+  display: inline;
+  text-align: left;
+  color: rgb(167, 167, 167);
+  font-size: 2em;
+}
+
+.name::after {
+  content: "Coder'";
+  padding-left: 5px;
+  color: #50e48d
+}
+
+.main-header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/craggy-dune.jpeg);
+  background-size: cover;
+  padding: 20px;
+}
+
+.avatar {
+  border-radius: 50%;
+  border: white 3px solid;
+  align-items: left;
+}
+
+.sub-title {
+  font-size: 25px;
+  color: #50e48d;
+  text-shadow: 1px 2px 2px  #777;;
+  padding: 10px 55px;
+  text-align: right;
+}
+
+.nav li{
+  display: inline;
+  font-size: 22px;
+}
+
+.nav a {
+  padding: .5em;
+  color: rgb(167, 167, 167)
+}
+
+.nav ul {
+  position: relative;
+  text-align: right;
+  display: block;
+  padding: 2px 24px;
+}
+
+.nav a:hover {
+  color: #E19627;
+}
+
+/* .content-grid > section {
+  background-color: #108194;
+  text-align: center;
+  padding: 20px 0;
+} */
+
+/* .content-grid {
+  display: grid;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  grid-template-columns: 1fr 2fr;
+  background-color: #108194;
+  grid-gap: 10px;
+  padding: 10px;
+  justify-content: center;
+  align-items:center; 
+} */
+
+.title {
+  padding: 10px;
+  position: relative;
+  align-self: center;
+}
+
+#about-me {
+  font-size: 35px;
+}
+
+#work {
+  font-size: 35px;
+}
+
+.work-row-1 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.work-row-2 {
+  padding: 10px 0 0 45px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.work-row-3 {
+  padding: 10px 0 0 45px;
+  margin-right: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#code-quiz {
+  margin-right: 10px;
+}
+
+#weather-dashboard {
+  margin-left: 10px;
+}
+
+#cat-and-mouse-game {
+  margin-right: 10px;
+}
+
+#project-manager {
+  margin-left: 10px;
+}
+
+#contact-me {
+  font-size: 35px;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.contact-me-content li{
+  display: inline;
+  justify-content: space-around;
+  padding: 0 40px;
+  text-decoration: underline;
+}
+
+.contact-div{
+  display: flex;
+
+}
+
+@media screen and (max-width: 1200px) {
+
+  .avatar {
+    height: 100px;
+    width: 100px;
+  }
+  .nav li {
+    display: flex;
+    justify-content: end;
+  }
+
+  .name {
+    position: absolute;
+    top: 10px
+  }
+
+  .sub-title {
+    position: relative;
+    text-align: left;
+    padding: 0;
+  }
+
+  .content-grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    grid-template-columns: 600px;
+    grid-template-rows: minmax(1fr auto);
+    background-color: #108194;
+    grid-gap: 10px;
+    padding: 10px;
+    justify-content: center;
+    align-items:center; 
+  } 
+
+  .work-row-1 {
+    width: 100%;
+  }
+
+  .work-row-2 {
+    max-width: 100%;
+  }
+
+  .work-row-3 {
+    max-width: 100%;
+  }
+
+  .contact-me-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-me-content li {
+    padding: 2px
+  }
+}
+
+@media screen and (max-width: 768px) {
+ 
+  .nav li {
+    display: flex;
+    justify-content: end;
+  }
+
+  .name {
+    position: absolute;
+    top: 10px
+  }
+
+  .sub-title {
+    position: relative;
+    text-align: left;
+    padding: 0;
+  }
+
+  .content-grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    grid-template-columns: 768px;
+    grid-auto-rows: minmax(1fr auto);
+    background-color: #108194;
+    grid-gap: 10px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center; 
+  } 
+
+  .work-row-1 > img {
+    object-fit: contain;
+  }
+
+  .work-row-2 {
+    flex-direction: column;
+  }
+
+  .work-row-3 {
+    flex-direction: column;
+  }
+
+  .contact-me-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-me-content li {
+    padding: 2px
+  }
+}
